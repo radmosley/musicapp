@@ -1,72 +1,25 @@
-.intro {
-    position: relative;
-    @media (min-width: 992px) {
-      .intro-img {
-        width: 75%;
-        float: right;
-      }
-      .intro-text {
-        left: 0;
-        width: 60%;
-        margin-top: 3rem;
-        position: absolute;
-        .intro-button {
-          width: 100%;
-          left: 0;
-          position: absolute;
-          bottom: -2rem;
-        }
-      }
-    }
-    @media (min-width: 1200px) {
-      .intro-text {
-        width: 45%;
-      }
+nav {
+  display: inline-block;
+  width:100vw;
+
+  ul {
+    float:right;
+    position: static;
+    list-style: none;
+    margin-top: 0;
+
+    li {
+      display: inline;
+      padding: 20px;
     }
   }
-  .product-item {
-    .product-item-img {}
-    .product-item-description {}
-    @media (min-width: 992px) {
-      .product-item-title {
-        position: relative;
-        z-index: 1;
-        margin-bottom: -3rem;
-      }
-      .product-item-img {
-        position: relative;
-        z-index: 0;
-        max-width: 60vw;
-      }
-      .product-item-description {
-        position: relative;
-        z-index: 1;
-        margin-top: -3rem;
-        max-width: 50vw;
-      }
-    }
-  }
-  .list-hours {
-    font-size: 0.9rem;
-    .list-hours-item {
-      border-bottom: 1px solid fade-out($primary, 0.5);
-      padding-bottom: .25rem;
-      margin-bottom: 1rem;
-      font-style: italic;
-      &.today {
-        font-weight: bold;
-        color: $primary;
-      }
-    }
-    @media(min-width: 992px) {
-      width: 50%;
-      font-size: 1.1rem;
-    }
-  }
-  
-  .address {
-    strong {
-      font-size: 1.2rem;
-    }
-  }
-      
+}
+
+.featured_videos {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
