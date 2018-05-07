@@ -20,35 +20,45 @@
     <link rel="stylesheet" type="text/css" href="{% static "pages/css/main.css" %}">
   </head>
 
-  <body>
+<body>
 <div class="page-container">
-<div class="video-background">
-  <video autoplay muted loop id="myVideo">
-    <source src="rain.mp4" type="video/mp4">
-  </video>
-</div>
+
+//Featured Playlist Playing in the Background
+  <div class="video-background">
+    <video autoplay muted loop id="myVideo">
+      <source src="rain.mp4" type="video/mp4">
+    </video>
+  </div>
+
+//Navigation Bar
   <nav>
-    <ul class="signed-out">
-      <li>sign in</li>
-      <li>sign up</li>
-    </ul>
+    <div class="container">
+      <ul class="signed-out">
+        <li>sign in</li>
+        <li>sign up</li>
+      </ul>
+    </div>
   </nav>
 
+//Search Bar and Header
   <div class="feature_videos">
     <h1>VIDMU</h1>
-      <form action="/action_page.php">
-        <input type="text" placeholder="Search an artist, song, or genre" name="search">
-      </form>
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search an artist, song, or genre" name="search">
+    </form>
   </div>
-  <div class="featured_playlist">
-    <h2>Featured Playlist</h2>
-      <ul class="video">
-        <li>video one</li>
-        <li>video two</li>
-        <li>video three</li>
-        <li>video four</li>
-      </ul>
-</div>
+
+//Featured Playlist Section
+    <div class="featured_playlist">
+      <div class="container"
+      <h2>Featured Playlist</h2>
+        <ul class="video">
+          <li>video one</li>
+          <li>video two</li>
+          <li>video three</li>
+          <li>video four</li>
+        </ul>
+    </div>
 </div>
     <!-- Bootstrap CDN core JavaScript and JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

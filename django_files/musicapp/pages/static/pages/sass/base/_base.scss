@@ -1,12 +1,28 @@
+.page-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.video-background {
+    positon: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
 nav {
-  display: inline-block;
-  width:100vw;
+    position: static;
+    height: 8vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #40b298ba;
 
   ul {
-    float:right;
-    position: static;
-    list-style: none;
     margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 
     li {
       display: inline;
@@ -16,10 +32,14 @@ nav {
 }
 
 .featured_videos {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: static;
+    margin: 0;
+    padding: 0;
+}
+
+.featured_playlist {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #40b298ba;
+    height: 30vh;
 }
