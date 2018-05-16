@@ -6,7 +6,7 @@
 }
 
 .video-background {
-    positon: absolute;
+    position: absolute;
     height: 100vh;
     width: 100vw;
 }
@@ -18,17 +18,20 @@ nav {
     margin: 0;
     width: 100%;
     background-color: #40b298ba;
+    display: flex;
+    align-items: center;
 
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        float: right;
 
-    li {
-      display: inline;
-      padding: 20px;
+        li {
+            display: inline;
+            padding: 0 20px;
+        }
     }
-  }
 }
 
 .featured_videos {
@@ -42,4 +45,11 @@ nav {
     width: 100%;
     background-color: #40b298ba;
     height: 30vh;
+}
+
+
+.video {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
