@@ -1,2 +1,5 @@
 *.psd
 /node_modules
+*.psd
+TODO
+*.xlsx
