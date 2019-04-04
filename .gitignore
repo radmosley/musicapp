@@ -1,5 +1,5 @@
 *.psd
-/node_modules
+/api/node_modules
 *.psd
 TODO
 *.xlsx
